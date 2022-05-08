@@ -1,5 +1,4 @@
 .pt {
-<<<<<<< HEAD
     padding-top: 15%;
 }
 
@@ -38,41 +37,6 @@
     background-color: rgba(122, 222, 242, 0.816);
     height: 50px;
     overflow-y: scroll;
-=======
-  padding-top: 15%;
-}
-.background {
-  background-image: url('image/doc.jfif');
-  background-size: 1550px 750px;
-  background-repeat: no-repeat;
-}
-.topic {
-  font-size: 30px;
-  font-weight: 600;
-  font-family: 'Kalam', cursive;
-  text-decoration: underline;
-  color: rgb(0, 64, 13);
-}
-.cityname {
-  font-size: 25px;
-  font-weight: 400px;
-  color: #001738;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 3%;
-}
-.select {
-  padding-left: 10%;
-}
-.select > select {
-  width: 80%;
-  padding-left: 2%;
-  border-radius: 8px;
-  font-size: 25px;
-  color: darkslategray;
-  background-color: rgba(122, 222, 242, 0.816);
-  height: 50px;
-  overflow-y: scroll;
->>>>>>> 77d2a8f698f0efcc85955917d391d3454391107a
 }
 
 .btn-next {
@@ -86,7 +50,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-<<<<<<< HEAD
     .pt {
         padding-top: 50%;
     }
@@ -110,21 +73,3 @@
         padding-left: 20%;
     } */
 }
-=======
-  .pt {
-    padding-top: 50%;
-  }
-
-  .background {
-    background-image: url('image/mobbg.jfif');
-    background-size: 600px 1000px;
-    background-repeat: no-repeat;
-  }
-  .topic {
-    font-size: 15px;
-  }
-  .select > select {
-    font-size: 20px;
-  }
-}
->>>>>>> 77d2a8f698f0efcc85955917d391d3454391107a
