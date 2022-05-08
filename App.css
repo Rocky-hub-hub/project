@@ -1,53 +1,75 @@
-.pt{
+.pt {
     padding-top: 15%;
 }
-.background{
-    background-image:url('image/doc.jfif');
-     background-size: 1550px 750px; 
-     background-repeat: no-repeat;
+
+.background {
+    background-image: url('image/doc.jfif');
+    background-size: 1550px 750px;
+    background-repeat: no-repeat;
 }
-.topic{
+
+.topic {
     font-size: 30px;
     font-weight: 600;
     font-family: 'Kalam', cursive;
-    text-decoration:underline;
-    color:rgb(0, 64, 13);
+    text-decoration: underline;
+    color: rgb(0, 64, 13);
 }
-.cityname{
+
+.cityname {
     font-size: 25px;
     font-weight: 400px;
     color: #001738;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 3%;
 }
-.select{
+/* 
+.select {
     padding-left: 10%;
-}
-.select>select{
+} */
+
+.select>select {
     width: 80%;
-    padding-left: 2%;
+    /* padding-left: 2%; */
     border-radius: 8px;
     font-size: 25px;
     color: darkslategray;
-    background-color:rgba(122, 222, 242, 0.816);
-    height:50px;
+    background-color: rgba(122, 222, 242, 0.816);
+    height: 50px;
     overflow-y: scroll;
 }
 
+.btn-next {
+    background-color: rgba(66, 234, 253, 0.899);
+    width: 150px;
+    font-size: 30px;
+    font-weight: 600px;
+    color: darkolivegreen;
+    bottom: 0;
+    
+}
+
 @media only screen and (max-width: 600px) {
-    .pt{
+    .pt {
         padding-top: 50%;
     }
 
-    .background{
-        background-image:url('image/mobbg.jfif');
-         background-size: 600px 1000px; 
-         background-repeat: no-repeat;
+    .background {
+        background-image: url('image/mobbg.jfif');
+        background-size: 600px 1000px;
+        background-repeat: no-repeat;
     }
-    .topic{
+
+    .topic {
         font-size: 15px;
     }
-    .select>select{
+
+    .select>select {
         font-size: 20px;
+        overflow-y: scroll;
     }
-  }
+
+    /* .select {
+        padding-left: 20%;
+    } */
+}
