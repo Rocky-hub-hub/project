@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="App.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
@@ -27,23 +28,140 @@
     <div class="topic text-center">
         Kolkata
     </div>
+    <!--code for Doctor modal box --->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: rgb(224, 253, 240);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Doctor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div>
+                        <img src="image/doc-icon.png" alt="doc-icon" class="doctor-modal"><br><b>
+                            <center>Dr.Reshav Sahani</center>
+                        </b>
+                    </div>
+                    <img src="image/wave.png" alt="wave" width="100%" height="80px">
+                    <div class="modal-detail">
+                        <table style="width:100%">
+                            <tr>
+                                <td><b>Specialist In:</b></td>
+                                <td>General Surgen</td>
+                            </tr>
+
+                            <tr>
+                                <td><b>Age:</b></td>
+                                <td>28yr</td>
+                            </tr>
+
+                            <tr>
+                                <td><b>Experience:</b></td>
+                                <td>+4yr</td>
+                            </tr>
+
+                            <tr>
+                                <td><b>Address:</b></td>
+                                <td>Bidhan Nagar, Sector V, Kolkata.
+                                    <a href="https://goo.gl/maps/5C1PvMLJHoxEtyzg7" target="_blank"> <img
+                                            src="image/map.png" alt="Map" width="25px"></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><b>Rating:</b></td>
+                                <td><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </td>
+                            </tr>
+
+                        </table>
+                        <b>About me -</b><br>
+                        <p style="text-align: justify;"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
+                            culpa corporis hic nemo atque
+                            odio cupiditate eaque facilis quibusdam? Rerum, veritatis. Omnis aliquam excepturi nihil.
+                            Eos
+                            enim exercitationem perferendis recusandae.</p>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Sent
+                        Request</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: rgb(224, 253, 240);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel2">Sent Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <b>Select Appointment Type -</b><br>
+                    <input type="radio" name="mode" value="Online">
+                      <label for="Online">Online</label>
+                      <input type="radio" name="mode" value="Offline">
+                      <label for="Offline">Offline</label>
+                    <p><b>Expected Appointment Date -</b><br>
+                        <input type="radio" name="Date" value="Within 3-Days.">
+                          <label for="Within 3-Days.">Within a 3-Days.</label><br>
+                          <input type="radio" name="Date" value="Within a Week.">
+                          <label for="Within a Week.">Within a Week.</label><br>
+                        <input type="radio" name="Date" value="Within a 15-Days">
+                          <label for="Within a 15-Days">Within a 15-Days</label>
+                    </p>
+                    <p><b>Upload Previous Report(If've) -</b><br>
+                        <div class="upload-btn-wrapper">
+                            <button class="btn-upload">Upload Report</button>
+                            <input type="file" name="myfile" />
+                          </div>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-toggle="modal">Comfirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Here Doctor Mode]al box over-->
     <div class="container">
         <img src="image/doc-icon.png" alt="doc-icon" class="doc-img">
         <div class="detail">
             <b>Name:</b> Dr.Reshav Sahani<br>
             <b>Specialist In:</b> General Surgen<br>
-            <b>Address:</b> Bidhan Nagar, Sector V, Kolkata.<br>
-            <img src="image/map.png" alt="Map" width="30px"> <a href="https://goo.gl/maps/5C1PvMLJHoxEtyzg7" target="_blank"> https://goo.gl/maps/5C1PvMLJHoxEtyzg7</a>
+            <b>Address:</b> Bidhan Nagar, Sector V, Kolkata.
+            <a href="https://goo.gl/maps/5C1PvMLJHoxEtyzg7" target="_blank"> <img src="image/map.png" alt="Map"
+                    width="25px"></a>
         </div>
-        <div>
-            Available In:<br>
-            
+        <div style="width:300px">
+            <b>Available In:</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<strong style="color:rgb(56, 230, 56);">Online</strong><strong
+                style="color:rgb(252, 98, 67)"> Offline</strong><br>
+            <b>Rating</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <div style="margin-top: 80px; width: 300px;">
+            <a class="btn" style="width: 200px; background-color: #00ffbf; border:#08503e;" data-bs-toggle="modal"
+                href="#exampleModalToggle" role="button">View Profile</a>
         </div>
     </div>
-    
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"s
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" s
         crossorigin="anonymous"></script>
 </body>
 
