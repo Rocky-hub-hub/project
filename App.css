@@ -109,15 +109,31 @@
     background-repeat: no-repeat;
 }
 .container{
-    display: flexbox;
+    display: flex;
     width: 95%;
     height: 200px;
     background-color: rgba(149, 231, 239, 0.886);
     border-radius: 25px;
     border: solid rgb(116, 241, 245);
+    justify-content: flex-start;
+    
 }
+.container > div {
+    width: 500px;
+    margin-left:-25px;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 35px;
+    font-size: 20px;
+  }
 .doc-img{
     width: 300px;
+    height: 150px;
     border-radius: 50%;
+    margin-left: -50px;
+    margin-top: 25px;
+}
+.detail{
+    font-size: 24px;
     
 }
