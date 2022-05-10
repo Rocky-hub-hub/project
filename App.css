@@ -104,6 +104,10 @@
 }
 
 /*CSS for Selectdoc.html*/
+.logo {
+    width: 180px;
+    height: 30px;
+}
 .background-doc {
     background-color: #caefe1;
 }
@@ -223,6 +227,12 @@
 .link-container{
     text-decoration:none;
      color:rgb(1, 14, 1) ;
+}
+.doctor-modal{
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 75px;
 }
 
 }
