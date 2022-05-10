@@ -120,10 +120,10 @@
                           <label for="Within a 15-Days">Within a 15-Days</label>
                     </p>
                     <p><b>Upload Previous Report(If've) -</b><br>
-                        <div class="upload-btn-wrapper">
-                            <button class="btn-upload">Upload Report</button>
-                            <input type="file" name="myfile" />
-                          </div>
+                    <div class="upload-btn-wrapper">
+                        <button class="btn-upload">Upload Report</button>
+                        <input type="file" name="myfile" />
+                    </div>
                     </p>
                 </div>
                 <div class="modal-footer">
@@ -133,31 +133,33 @@
         </div>
     </div>
     <!--Here Doctor Mode]al box over-->
-    <div class="container">
-        <img src="image/doc-icon.png" alt="doc-icon" class="doc-img">
-        <div class="detail">
-            <b>Name:</b> Dr.Reshav Sahani<br>
-            <b>Specialist In:</b> General Surgen<br>
-            <b>Address:</b> Bidhan Nagar, Sector V, Kolkata.
-            <a href="https://goo.gl/maps/5C1PvMLJHoxEtyzg7" target="_blank"> <img src="image/map.png" alt="Map"
-                    width="25px"></a>
+    <a data-bs-toggle="modal" href="#exampleModalToggle" class="link-container">
+        <div class="container">
+            <img src="image/doc-icon.png" alt="doc-icon" class="doc-img">
+            <div class="detail">
+                <b>Name:</b> Dr.Reshav Sahani<br>
+                <b>Specialist In:</b> General Surgen<br>
+                <b>Address:</b> Bidhan Nagar, Sector V, Kolkata.
+                <a href="https://goo.gl/maps/5C1PvMLJHoxEtyzg7" target="_blank"> <img src="image/map.png" alt="Map"
+                        width="25px"></a>
+            </div>
+            <div style="width:300px" class="hide-in-phone">
+                <b>Available In:</b><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<strong style="color:rgb(56, 230, 56);">Online</strong><strong
+                    style="color:rgb(252, 98, 67)"> Offline</strong><br>
+                <b>Rating</b><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <b style="margin-top: 80px; width: 300px;">
+                <a class="btn view-profile" data-bs-toggle="modal" href="#exampleModalToggle" role="button">View
+                    Profile</a>
+            </b>
         </div>
-        <div style="width:300px">
-            <b>Available In:</b><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<strong style="color:rgb(56, 230, 56);">Online</strong><strong
-                style="color:rgb(252, 98, 67)"> Offline</strong><br>
-            <b>Rating</b><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-        </div>
-        <div style="margin-top: 80px; width: 300px;">
-            <a class="btn" style="width: 200px; background-color: #00ffbf; border:#08503e;" data-bs-toggle="modal"
-                href="#exampleModalToggle" role="button">View Profile</a>
-        </div>
-    </div>
+    </a>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

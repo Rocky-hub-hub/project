@@ -100,13 +100,12 @@
         font-size: 15px;
         font-weight: 300px;
     }
+    
 }
 
 /*CSS for Selectdoc.html*/
 .background-doc {
-    background-image: url('image/docbg.jfif');
-    background-size: 1550px 750px;
-    background-repeat: no-repeat;
+    background-color: #caefe1;
 }
 .container{
     display: flex;
@@ -176,3 +175,54 @@
     top: 0;
     opacity: 0;
   }
+  .view-profile{
+    width: 200px; 
+    background-color: #00ffbf; 
+    border:#08503e;
+  }
+  .link-container{
+    text-decoration:none;
+     color:darkgreen ;
+}
+
+  @media only screen and (max-width: 600px) {
+
+  /*CSS for Selectdoc.html*/
+  .container{
+    width: 90%;
+    height: 2%;
+    margin-right: 20px;
+}
+.doc-img{
+    width: 150px;
+    height: 75px;
+    margin-left: -30px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+.container > div {
+    
+    margin-left:-25px;
+    margin-top: 10px;
+    text-align: left;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .container > b{
+      display: none;
+  }
+  .view-profile{
+    width: 80px; 
+    height: 20px;
+    font-size: 10px;
+    padding-bottom: 20px;
+  }
+  .hide-in-phone{
+      display: none;
+  }
+.link-container{
+    text-decoration:none;
+     color:rgb(1, 14, 1) ;
+}
+
+}
