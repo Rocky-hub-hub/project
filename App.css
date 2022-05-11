@@ -111,7 +111,7 @@
 .background-doc {
     background-color: #caefe1;
 }
-.container{
+/* .container{
     display: flex;
     width: 95%;
     height: 200px;
@@ -120,8 +120,8 @@
     border: solid rgb(116, 241, 245);
     justify-content: flex-start;
     
-}
-.container > div {
+} */
+/* .container > div {
     width: 500px;
     margin-left:-25px;
     margin-top: 50px;
@@ -132,7 +132,7 @@
   .container > div > strong:before{
     content:'\25C9';
     color: #001738;
-  }
+  } */
   .checked {
     color: orange;
   }
@@ -188,11 +188,10 @@
     text-decoration:none;
      color:darkgreen ;
 }
-
+/* 
   @media only screen and (max-width: 600px) {
 
-  /*CSS for Selectdoc.html*/
-  .container{
+   .container{
     width: 90%;
     height: 2%;
     margin-right: 20px;
@@ -233,6 +232,6 @@
     height: 100px;
     border-radius: 50%;
     margin-left: 75px;
-}
+} 
 
-}
+} */
