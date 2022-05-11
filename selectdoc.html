@@ -56,11 +56,10 @@
           </div>
           <div class="modal-body">
             <div>
-              <img
-                src="image/doc-icon.png"
-                alt="doc-icon"
-                class="doctor-modal"
-              /><br /><b>
+                <div class="d-flex justify-content-center mt-3">
+                    <img src="image/doc-icon.png" alt="doc-icon" width="100" height="100"  />
+   
+               </div><b>
                 <center>Dr.Reshav Sahani</center>
               </b>
             </div>
@@ -176,8 +175,8 @@
       </div>
     </div>
     <!--Here Doctor Mode]al box over-->
+    <button data-bs-toggle="modal" href="#exampleModalToggle" class="link-container mx-auto btn d-flex justify-content-center" style="width: 100%;">
     <div class="container bg-light">
-        <a data-bs-toggle="modal" href="#exampleModalToggle" class="link-container">
       <div class="row p-2">
         <div class="col-md-3 col-sm-6 col-4">
             <div class="d-flex justify-content-center mt-3">
@@ -185,7 +184,7 @@
 
             </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-8 mt-4">
+        <div class="col-md-3 col-sm-6 col-8 mt-4 text-start">
           <div class="">
             <h6><span class="fw-bold "> Name : </span> Dr.Reshav Sahani</h6>
             <h6>
@@ -202,19 +201,20 @@
             </h6>
           </div>
         </div>
-        <div class="col-md-3 col-sm-12 d-none d-md-block mt-4">
+        <div class="col-md-3 col-sm-12 d-none d-md-block mt-4 text-start">
             <b>Available In:</b><br />
-            &nbsp;&nbsp;&nbsp;&nbsp;<strong style="color: rgb(56, 230, 56)"
+            <input type="radio" checked disabled> <strong style="color: rgb(56, 230, 56)"
               >Online</strong
-            ><strong style="color: rgb(252, 98, 67)"> Offline</strong><br />
+            >
+            <input type="radio" disabled><strong style="color: rgb(252, 98, 67)"> Offline</strong><br />
             <b>Rating</b><br />
-            &nbsp;&nbsp;&nbsp;&nbsp;<span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star"></span>
         </div>
-        <div class="col-md-3 col-sm-12 d-none d-md-block" style="margin-top: 5%">
+        <div class="col-md-3 col-sm-12 d-none d-md-block" style="margin-top: 3%;">
           <!-- <b style="margin-top: 80px; width: 300px;"> -->
           <a
             class="btn view-profile "
@@ -226,8 +226,8 @@
           <!-- </b> -->
         </div>
       </div>
-    </a>
     </div>
+</button>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
