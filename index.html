@@ -10,20 +10,23 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="dist/owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="dist/owlcarousel/owl.theme.default.min.css" />
     <script
       src="dist/bootstrap/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-
     <!-- <link rel="stylesheet" href="dist/fontawesome/css/fontawesome.min.css" /> -->
     <!-- <link rel="stylesheet" href="dist/fontawesome/css/all.min.css" /> -->
     <link rel="stylesheet" href="dist/bootstrap/css/bootstrap-icons.css" />
     <!-- <link rel="stylesheet" href="dist/css/header.css" /> -->
-    <script
-      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
-      type="text/javascript"
-    ></script>
+    <script src="dist/vendors/jquery.min.js" type="text/javascript"></script>
+
+    <script src="dist/owlcarousel/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="dist/tinyslider/tiny-slider.css" />
+    <script src="dist/tinyslider/tiny-slider.js"></script>
+
     <style>
       * {
         font-family: Calibri;
@@ -108,7 +111,7 @@
     <title>Online Phharmacy</title>
   </head>
 
-  <body>
+  <body class="">
     <div class="overlay"></div>
     <nav
       class="navbar navbar-expand-md navbar-dark main-menu"
@@ -417,173 +420,794 @@
         </div>
       </div>
     </section>
-    <section>
+    <section style="margin: 0">
       <div class="container-fluid">
         <h3>Shop by health conditions</h3>
         <hr />
-
-        <div
-          class="d-flex flex-row flex-nowrap overflow-auto hide-scrollbar p-2"
-        >
-          <a
-            href="#"
-            class="btn btn-sm shadow-sm bg-body rounded p-2 mx-2 text-start btn-rise"
-            style="min-width: 200px"
-          >
-            <!-- <div style="color: -webkit-link"> -->
-            <img
-              src="dist/img/icons/icons8-coronavirus-50.png"
-              alt=""
-              class="src"
-            />
-            <span>Covid Care</span>
-            <!-- </div> -->
-          </a>
-          <a
-            href="#"
-            class="btn btn-sm shadow-sm bg-body p-2 mx-2 text-start btn-rise"
-            style="min-width: 200px"
-          >
-            <img
-              src="dist/img/icons/icons8-diabetes-50.png"
-              alt=""
-              class="src"
-            />
-            <span>Diabeties Care</span>
-          </a>
-          <a
-            href="#"
-            class="btn btn-sm shadow-sm bg-body rounded p-2 mx-2 text-start btn-rise"
-            style="min-width: 200px"
-          >
-            <img src="dist/img/icons/icons8-brain_-50.png" alt="" class="src" />
-            <span>Mind Care</span>
-          </a>
-          <a
-            href="#"
-            class="btn btn-sm shadow-sm bg-body rounded p-2 mx-2 text-start btn-rise"
-            style="min-width: 200px"
-          >
-            <img src="dist/img/icons/icons8-liver-50.png" alt="" class="src" />
-            <span>Liver Care</span>
-          </a>
-          <a
-            href="#"
-            class="btn btn-sm shadow-sm bg-body rounded p-2 mx-2 text-start btn-rise"
-            style="min-width: 200px"
-          >
-            <img
-              src="dist/img/icons/icons8-medical-heart-50.png"
-              alt=""
-              class="src"
-            />
-            <span>Cardiac</span>
-          </a>
-          <a
-            href="#"
-            class="btn btn-sm shadow-sm bg-body rounded p-2 mx-2 text-start btn-rise"
-            style="min-width: 200px"
-          >
-            <img
-              src="dist/img/icons/icons8-pain-relife-50.png"
-              alt=""
-              class="src"
-            />
-            <span>Pain Relife</span>
-          </a>
-
-          <a
-            href="#"
-            class="btn btn-sm shadow-sm bg-body rounded p-2 mx-2 text-start btn-rise"
-            style="min-width: 200px"
-          >
-            <img
-              src="dist/img/icons/icons8-dental-crown-50.png"
-              alt=""
-              class="src"
-            />
-            <span>Oral Care</span>
-          </a>
-
-          <a
-            href="#"
-            class="btn btn-sm shadow-sm bg-body rounded p-2 mx-2 text-start btn-rise"
-            style="min-width: 200px"
-          >
-            <img src="dist/img/icons/icons8-lungs-50.png" alt="" class="src" />
-            <span>Respiratory</span>
-          </a>
-
-          <a
-            href="#"
-            class="btn btn-sm shadow-sm bg-body rounded p-2 mx-2 text-start btn-rise"
-            style="min-width: 200px"
-          >
-            <img
-              src="dist/img/icons/icons8-cold_and_immunity_50.png"
-              alt=""
-              class="src"
-            />
-            <span>Cold & Immunity</span>
-          </a>
-          <a
-            href="#"
-            class="btn btn-sm shadow-sm bg-body rounded p-2 mx-2 text-start btn-rise"
-            style="min-width: 200px"
-          >
-            <img
-              src="dist/img/icons/icons8-stomach-50.png"
-              alt=""
-              class="src"
-            />
-            <span>Stomach care</span>
-          </a>
-          <a
-            href="#"
-            class="btn btn-sm shadow-sm bg-body rounded p-2 mx-2 text-start btn-rise"
-            style="min-width: 200px"
-          >
-            <img
-              src="dist/img/icons/icons8-contraception-50.png"
-              alt=""
-              class="src"
-            />
-            <span>Sexual Health</span>
-          </a>
-          <a
-            href="#"
-            class="btn btn-sm shadow-sm bg-body rounded p-2 mx-2 text-start btn-rise"
-            style="min-width: 200px"
-          >
-            <img
-              src="dist/img/icons/icons8-ic_eyeear-50.png"
-              alt=""
-              class="src"
-            />
-            <span>Eye & Ear care</span>
-          </a>
-          <a
-            href="#"
-            class="btn btn-sm shadow-sm bg-body rounded p-2 mx-2 text-start btn-rise"
-            style="min-width: 200px"
-          >
-            <img src="dist/img/icons/icons8-adult--50.png" alt="" class="src" />
-            <span>Elderly Care</span>
-          </a>
+        <div class="carousel-wrapper">
+          <div class="owl-carousel owl-theme" id="owl-category">
+            <div class="item">
+              <a
+                href="#"
+                class="btn btn-sm shadow-sm bg-body rounded m-2 text-start btn-rise"
+                style="min-width: 200px"
+              >
+                <img
+                  src="dist/img/icons/icons8-coronavirus-50.png"
+                  alt=""
+                  class="src"
+                />
+                <span>Covid Care</span>
+              </a>
+            </div>
+            <div class="item">
+              <a
+                href="#"
+                class="btn btn-sm shadow-sm bg-body m-2 text-start btn-rise"
+                style="min-width: 200px"
+              >
+                <img
+                  src="dist/img/icons/icons8-diabetes-50.png"
+                  alt=""
+                  class="src"
+                />
+                <span>Diabeties Care</span>
+              </a>
+            </div>
+            <div class="item">
+              <a
+                href="#"
+                class="btn btn-sm shadow-sm bg-body rounded m-2 text-start btn-rise"
+                style="min-width: 200px"
+              >
+                <img
+                  src="dist/img/icons/icons8-brain_-50.png"
+                  alt=""
+                  class="src"
+                />
+                <span>Mind Care</span>
+              </a>
+            </div>
+            <div class="item">
+              <a
+                href="#"
+                class="btn btn-sm shadow-sm bg-body rounded m-2 text-start btn-rise"
+                style="min-width: 200px"
+              >
+                <img
+                  src="dist/img/icons/icons8-liver-50.png"
+                  alt=""
+                  class="src"
+                />
+                <span>Liver Care</span>
+              </a>
+            </div>
+            <dv class="item"
+              ><a
+                href="#"
+                class="btn btn-sm shadow-sm bg-body rounded m-2 text-start btn-rise"
+                style="min-width: 200px"
+              >
+                <img
+                  src="dist/img/icons/icons8-medical-heart-50.png"
+                  alt=""
+                  class="src"
+                />
+                <span>Cardiac</span>
+              </a></dv
+            >
+            <div class="item">
+              <a
+                href="#"
+                class="btn btn-sm shadow-sm bg-body rounded m-2 text-start btn-rise"
+                style="min-width: 200px"
+              >
+                <img
+                  src="dist/img/icons/icons8-pain-relife-50.png"
+                  alt=""
+                  class="src"
+                />
+                <span>Pain Relife</span>
+              </a>
+            </div>
+            <div class="item">
+              <a
+                href="#"
+                class="btn btn-sm shadow-sm bg-body rounded m-2 text-start btn-rise"
+                style="min-width: 200px"
+              >
+                <img
+                  src="dist/img/icons/icons8-dental-crown-50.png"
+                  alt=""
+                  class="src"
+                />
+                <span>Oral Care</span>
+              </a>
+            </div>
+            <div class="item">
+              <a
+                href="#"
+                class="btn btn-sm shadow-sm bg-body rounded m-2 text-start btn-rise"
+                style="min-width: 200px"
+              >
+                <img
+                  src="dist/img/icons/icons8-lungs-50.png"
+                  alt=""
+                  class="src"
+                />
+                <span>Respiratory</span>
+              </a>
+            </div>
+            <div class="item">
+              <a
+                href="#"
+                class="btn btn-sm shadow-sm bg-body rounded m-2 text-start btn-rise"
+                style="min-width: 200px"
+              >
+                <img
+                  src="dist/img/icons/icons8-cold_and_immunity_50.png"
+                  alt=""
+                  class="src"
+                />
+                <span>Cold & Immunity</span>
+              </a>
+            </div>
+            <div class="item">
+              <a
+                href="#"
+                class="btn btn-sm shadow-sm bg-body rounded m-2 text-start btn-rise"
+                style="min-width: 200px"
+              >
+                <img
+                  src="dist/img/icons/icons8-stomach-50.png"
+                  alt=""
+                  class="src"
+                />
+                <span>Stomach care</span>
+              </a>
+            </div>
+            <div class="item">
+              <a
+                href="#"
+                class="btn btn-sm shadow-sm bg-body rounded m-2 text-start btn-rise"
+                style="min-width: 200px"
+              >
+                <img
+                  src="dist/img/icons/icons8-contraception-50.png"
+                  alt=""
+                  class="src"
+                />
+                <span>Sexual Health</span>
+              </a>
+            </div>
+            <div class="item">
+              <a
+                href="#"
+                class="btn btn-sm shadow-sm bg-body rounded m-2 text-start btn-rise"
+                style="min-width: 200px"
+              >
+                <img
+                  src="dist/img/icons/icons8-ic_eyeear-50.png"
+                  alt=""
+                  class="src"
+                />
+                <span>Eye & Ear care</span>
+              </a>
+            </div>
+            <div class="item">
+              <a
+                href="#"
+                class="btn btn-sm shadow-sm bg-body rounded m-2 text-start btn-rise"
+                style="min-width: 200px"
+              >
+                <img
+                  src="dist/img/icons/icons8-adult--50.png"
+                  alt=""
+                  class="src"
+                />
+                <span>Elderly Care</span>
+              </a>
+            </div>
+          </div>
+          <!-- <div class="owl-nav">
+            <button
+              type="button"
+              role="presentation"
+              class="owl-nav-button owl-prev top-0 category-prev"
+            ></button>
+            <button
+              type="button"
+              role="presentation"
+              class="owl-nav-button owl-next top-0 category-next"
+            ></button>
+          </div> -->
         </div>
       </div>
     </section>
-    <section>
-      <div class="container-fluid">
-        <h3>GLUCOMETERS & TEST STRIPS</h3>
-        <hr />
-      </div>
-    </section>
+
     <section>
       <div class="container-fluid">
         <h3>Shop by health conditions</h3>
         <hr />
+
+        <div class="owl-carousel owl-theme" id="owl-shop1">
+          <div class="item">
+            <a
+              href="#"
+              class="btn btn-sm shadow-sm bg-body rounded m-2 btn-rise"
+              style="
+                min-width: 200px;
+                max-width: 200px;
+                border-radius: 10px !important;
+              "
+            >
+              <div class="row">
+                <div class="col-12">
+                  <img
+                    src="dist/img/icons/icons8-adult--50.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="src"
+                  />
+                </div>
+                <p class="fs-6 border-bottom mx-auto w-75">1</p>
+                <p class="fs-5 text-success">
+                  MRP(<span class="text-decoration-line-through text-black-50"
+                    >RS. 975</span
+                  >)<br />
+                  RS. 858
+                </p>
+                <p>25% less</p>
+                <button class="btn p-0 m-0">ADD TO CART</button>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a
+              href="#"
+              class="btn btn-sm shadow-sm bg-body rounded m-2 btn-rise"
+              style="
+                min-width: 200px;
+                max-width: 200px;
+                border-radius: 10px !important;
+              "
+            >
+              <div class="row">
+                <div class="col-12">
+                  <img
+                    src="dist/img/icons/icons8-adult--50.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="src"
+                  />
+                </div>
+                <p class="fs-6 border-bottom mx-auto w-75">2</p>
+                <p class="fs-5 text-success">
+                  MRP(<span class="text-decoration-line-through text-black-50"
+                    >RS. 975</span
+                  >)<br />
+                  RS. 858
+                </p>
+                <p>25% less</p>
+                <button class="btn p-0 m-0">ADD TO CART</button>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a
+              href="#"
+              class="btn btn-sm shadow-sm bg-body rounded m-2 btn-rise"
+              style="
+                min-width: 200px;
+                max-width: 200px;
+                border-radius: 10px !important;
+              "
+            >
+              <div class="row">
+                <div class="col-12">
+                  <img
+                    src="dist/img/icons/icons8-adult--50.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="src"
+                  />
+                </div>
+                <p class="fs-6 border-bottom mx-auto w-75">3</p>
+                <p class="fs-5 text-success">
+                  MRP(<span class="text-decoration-line-through text-black-50"
+                    >RS. 975</span
+                  >)<br />
+                  RS. 858
+                </p>
+                <p>25% less</p>
+                <button class="btn p-0 m-0">ADD TO CART</button>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a
+              href="#"
+              class="btn btn-sm shadow-sm bg-body rounded m-2 btn-rise"
+              style="
+                min-width: 200px;
+                max-width: 200px;
+                border-radius: 10px !important;
+              "
+            >
+              <div class="row">
+                <div class="col-12">
+                  <img
+                    src="dist/img/icons/icons8-adult--50.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="src"
+                  />
+                </div>
+                <p class="fs-6 border-bottom mx-auto w-75">4</p>
+                <p class="fs-5 text-success">
+                  MRP(<span class="text-decoration-line-through text-black-50"
+                    >RS. 975</span
+                  >)<br />
+                  RS. 858
+                </p>
+                <p>25% less</p>
+                <button class="btn p-0 m-0">ADD TO CART</button>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a
+              href="#"
+              class="btn btn-sm shadow-sm bg-body rounded m-2 btn-rise"
+              style="
+                min-width: 200px;
+                max-width: 200px;
+                border-radius: 10px !important;
+              "
+            >
+              <div class="row">
+                <div class="col-12">
+                  <img
+                    src="dist/img/icons/icons8-adult--50.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="src"
+                  />
+                </div>
+                <p class="fs-6 border-bottom mx-auto w-75">5</p>
+                <p class="fs-5 text-success">
+                  MRP(<span class="text-decoration-line-through text-black-50"
+                    >RS. 975</span
+                  >)<br />
+                  RS. 858
+                </p>
+                <p>25% less</p>
+                <button class="btn p-0 m-0">ADD TO CART</button>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a
+              href="#"
+              class="btn btn-sm shadow-sm bg-body rounded m-2 btn-rise"
+              style="
+                min-width: 200px;
+                max-width: 200px;
+                border-radius: 10px !important;
+              "
+            >
+              <div class="row">
+                <div class="col-12">
+                  <img
+                    src="dist/img/icons/icons8-adult--50.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="src"
+                  />
+                </div>
+                <p class="fs-6 border-bottom mx-auto w-75">6</p>
+                <p class="fs-5 text-success">
+                  MRP(<span class="text-decoration-line-through text-black-50"
+                    >RS. 975</span
+                  >)<br />
+                  RS. 858
+                </p>
+                <p>25% less</p>
+                <button class="btn p-0 m-0">ADD TO CART</button>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a
+              href="#"
+              class="btn btn-sm shadow-sm bg-body rounded m-2 btn-rise"
+              style="
+                min-width: 200px;
+                max-width: 200px;
+                border-radius: 10px !important;
+              "
+            >
+              <div class="row">
+                <div class="col-12">
+                  <img
+                    src="dist/img/icons/icons8-adult--50.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="src"
+                  />
+                </div>
+                <p class="fs-6 border-bottom mx-auto w-75">7</p>
+                <p class="fs-5 text-success">
+                  MRP(<span class="text-decoration-line-through text-black-50"
+                    >RS. 975</span
+                  >)<br />
+                  RS. 858
+                </p>
+                <p>25% less</p>
+                <button class="btn p-0 m-0">ADD TO CART</button>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
+
+    <section>
+      <div class="container-fluid">
+        <h3>Shop by health conditions</h3>
+        <hr />
+
+        <div class="owl-carousel owl-theme" id="owl-shop2">
+          <div class="item">
+            <a
+              href="#"
+              class="btn btn-sm shadow-sm bg-body rounded m-2 btn-rise"
+              style="
+                min-width: 200px;
+                max-width: 200px;
+                border-radius: 10px !important;
+              "
+            >
+              <div class="row">
+                <div class="col-12">
+                  <img
+                    src="dist/img/icons/icons8-adult--50.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="src"
+                  />
+                </div>
+                <p class="fs-6 border-bottom mx-auto w-75">1</p>
+                <p class="fs-5 text-success">
+                  MRP(<span class="text-decoration-line-through text-black-50"
+                    >RS. 975</span
+                  >)<br />
+                  RS. 858
+                </p>
+                <p>25% less</p>
+                <button class="btn p-0 m-0">ADD TO CART</button>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a
+              href="#"
+              class="btn btn-sm shadow-sm bg-body rounded m-2 btn-rise"
+              style="
+                min-width: 200px;
+                max-width: 200px;
+                border-radius: 10px !important;
+              "
+            >
+              <div class="row">
+                <div class="col-12">
+                  <img
+                    src="dist/img/icons/icons8-adult--50.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="src"
+                  />
+                </div>
+                <p class="fs-6 border-bottom mx-auto w-75">2</p>
+                <p class="fs-5 text-success">
+                  MRP(<span class="text-decoration-line-through text-black-50"
+                    >RS. 975</span
+                  >)<br />
+                  RS. 858
+                </p>
+                <p>25% less</p>
+                <button class="btn p-0 m-0">ADD TO CART</button>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a
+              href="#"
+              class="btn btn-sm shadow-sm bg-body rounded m-2 btn-rise"
+              style="
+                min-width: 200px;
+                max-width: 200px;
+                border-radius: 10px !important;
+              "
+            >
+              <div class="row">
+                <div class="col-12">
+                  <img
+                    src="dist/img/icons/icons8-adult--50.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="src"
+                  />
+                </div>
+                <p class="fs-6 border-bottom mx-auto w-75">3</p>
+                <p class="fs-5 text-success">
+                  MRP(<span class="text-decoration-line-through text-black-50"
+                    >RS. 975</span
+                  >)<br />
+                  RS. 858
+                </p>
+                <p>25% less</p>
+                <button class="btn p-0 m-0">ADD TO CART</button>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a
+              href="#"
+              class="btn btn-sm shadow-sm bg-body rounded m-2 btn-rise"
+              style="
+                min-width: 200px;
+                max-width: 200px;
+                border-radius: 10px !important;
+              "
+            >
+              <div class="row">
+                <div class="col-12">
+                  <img
+                    src="dist/img/icons/icons8-adult--50.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="src"
+                  />
+                </div>
+                <p class="fs-6 border-bottom mx-auto w-75">4</p>
+                <p class="fs-5 text-success">
+                  MRP(<span class="text-decoration-line-through text-black-50"
+                    >RS. 975</span
+                  >)<br />
+                  RS. 858
+                </p>
+                <p>25% less</p>
+                <button class="btn p-0 m-0">ADD TO CART</button>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a
+              href="#"
+              class="btn btn-sm shadow-sm bg-body rounded m-2 btn-rise"
+              style="
+                min-width: 200px;
+                max-width: 200px;
+                border-radius: 10px !important;
+              "
+            >
+              <div class="row">
+                <div class="col-12">
+                  <img
+                    src="dist/img/icons/icons8-adult--50.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="src"
+                  />
+                </div>
+                <p class="fs-6 border-bottom mx-auto w-75">5</p>
+                <p class="fs-5 text-success">
+                  MRP(<span class="text-decoration-line-through text-black-50"
+                    >RS. 975</span
+                  >)<br />
+                  RS. 858
+                </p>
+                <p>25% less</p>
+                <button class="btn p-0 m-0">ADD TO CART</button>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a
+              href="#"
+              class="btn btn-sm shadow-sm bg-body rounded m-2 btn-rise"
+              style="
+                min-width: 200px;
+                max-width: 200px;
+                border-radius: 10px !important;
+              "
+            >
+              <div class="row">
+                <div class="col-12">
+                  <img
+                    src="dist/img/icons/icons8-adult--50.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="src"
+                  />
+                </div>
+                <p class="fs-6 border-bottom mx-auto w-75">6</p>
+                <p class="fs-5 text-success">
+                  MRP(<span class="text-decoration-line-through text-black-50"
+                    >RS. 975</span
+                  >)<br />
+                  RS. 858
+                </p>
+                <p>25% less</p>
+                <button class="btn p-0 m-0">ADD TO CART</button>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a
+              href="#"
+              class="btn btn-sm shadow-sm bg-body rounded m-2 btn-rise"
+              style="
+                min-width: 200px;
+                max-width: 200px;
+                border-radius: 10px !important;
+              "
+            >
+              <div class="row">
+                <div class="col-12">
+                  <img
+                    src="dist/img/icons/icons8-adult--50.png"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="src"
+                  />
+                </div>
+                <p class="fs-6 border-bottom mx-auto w-75">7</p>
+                <p class="fs-5 text-success">
+                  MRP(<span class="text-decoration-line-through text-black-50"
+                    >RS. 975</span
+                  >)<br />
+                  RS. 858
+                </p>
+                <p>25% less</p>
+                <button class="btn p-0 m-0">ADD TO CART</button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section></section>
+    <script>
+      // $('#owl-shop').owlCarousel({
+      //   loop: true,
+      //   // items: 5,
+      //   center: true,
+      //   autoWidth: true,
+      //   autoplay: true,
+      //   smartSpeed: 500,
+      //   nav: true,
+      //   dots: false,
+
+      //   navText: [
+      //     '<span aria-label="Previous">‹</span>',
+      //     '<span aria-label="Next">›</span>',
+      //   ],
+      //   lazyLoad: true,
+      //   responsive: {
+      //     0: { items: 1 },
+      //     300: { items: 1 },
+      //     400: { items: 2 },
+      //     500: { items: 2 },
+      //     600: { items: 3 },
+      //     700: { items: 3 },
+      //     900: { items: 4 },
+      //     900: { items: 5 },
+      //     1200: { items: 6 },
+      //     1400: { items: 7 },
+      //   },
+      // });
+      // $('.owl-rex').owlCarousel({
+      //   loop: true,
+      //   // items: 5,
+      //   center: true,
+      //   autoWidth: true,
+      //   autoplay: true,
+      //   smartSpeed: 500,
+      //   nav: true,
+      //   dots: false,
+      //   navText: [
+      //     "<div class='nav-button owl-prev'>‹</div>",
+      //     "<div class='nav-button owl-next'>›</div>",
+      //   ],
+      //   lazyLoad: true,
+      //   responsive: {
+      //     0: { items: 1 },
+      //     300: { items: 1 },
+      //     400: { items: 2 },
+      //     500: { items: 2 },
+      //     600: { items: 3 },
+      //     700: { items: 3 },
+      //     900: { items: 4 },
+      //     900: { items: 5 },
+      //     1200: { items: 6 },
+      //     1400: { items: 7 },
+      //   },
+      // });
+
+      $('#owl-category').each(function () {
+        $(this).owlCarousel({
+          loop: true,
+          center: true,
+          autoWidth: true,
+          autoplay: false,
+          smartSpeed: 500,
+          dots: false,
+          navigation: false,
+          nav: false,
+          lazyLoad: true,
+        });
+        // $('.category-next').click(function () {
+        //   $('#owl-category').trigger('next.owl.carousel');
+        // });
+        // $('.category-prev').click(function () {
+        //   $('#owl-category').trigger('prev.owl.carousel', [300]);
+        // });
+      });
+      $('#owl-shop1').each(function () {
+        $(this).owlCarousel({
+          loop: true,
+          center: true,
+          autoWidth: true,
+          autoplay: true,
+          smartSpeed: 500,
+          dots: false,
+          navigation: false,
+          nav: false,
+          lazyLoad: true,
+        });
+        $('.next').click(function () {
+          $('#owl-shop').trigger('next.owl.carousel');
+        });
+        $('.prev').click(function () {
+          $('#owl-shop1').trigger('prev.owl.carousel', [300]);
+        });
+      });
+      $('#owl-shop2').each(function () {
+        $(this).owlCarousel({
+          loop: true,
+          center: true,
+          autoWidth: true,
+          autoplay: true,
+          smartSpeed: 500,
+          dots: false,
+          nav: true,
+          navText: [
+            "<div class='nav-button owl-prev'>‹</div>",
+            "<div class='nav-button owl-next'>›</div>",
+          ],
+
+          lazyLoad: true,
+        });
+      });
+    </script>
   </body>
 </html>
